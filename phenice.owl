@@ -1,0 +1,393 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/rdfbones/ext/phenice"
+     xml:base="http://w3id.org/rdfbones/ext/phenice"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:fma="http://purl.org/sig/ont/fma/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:resource="http://semanticscience.org/resource/">
+    <owl:Ontology rdf:about="http://w3id.org/rdfbones/ext/phenice">
+        <owl:imports rdf:resource="http://w3id.org/rdfbones/ext/standards-si"/>
+        <owl:imports rdf:resource="http://w3id.org/rdfbones/ext/phaleron-si/phaleron-si.owl"/>
+        <owl:imports rdf:resource="http://w3id.org/rdfbones/ontology_resources/core/v0-2/rdfbones.owl"/>
+        <terms:creator>Lukas Bender</terms:creator>
+        <terms:title>Phenice&apos;s Sex Estimation ontology</terms:title>
+        <rdfs:label>Phenice&apos;s Sex Estimation ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/ClassificationProcess -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice/ClassificationProcess">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:label>Phenice&apos;s morphological classification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeClassificationProcess -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeClassificationProcess">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phenice/ClassificationProcess"/>
+        <rdfs:label>Phenice&apos;s ischiopubic ramus ridge morphological classification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeMorphology -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeMorphology">
+        <rdfs:label>Phenice&apos;s ischiopubic ramus ridge assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeMorphologyLabel -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeMorphologyLabel">
+        <rdfs:label>Phenice&apos;s ischiopubic ramus ridge assigned morphology label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeMorphologyNumericScore -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeMorphologyNumericScore">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phenice/MorphologyNumericScore"/>
+        <rdfs:label>Numeric value of Phenice&apos;s ischiopubic ramus ridge assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeMorphologyScalarTransform -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeMorphologyScalarTransform">
+        <rdfs:label>Phenice&apos;s ischiopubic ramus ridge assigned morphology scalar transformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/MorphologyNumericScore -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice/MorphologyNumericScore">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:label>Numeric value of Phenice&apos;s assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/MorphologyScoreLabelSorting -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice/MorphologyScoreLabelSorting">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/core#LabelSortingSpecification"/>
+        <rdfs:label>Sorting directive for Phenice&apos;s sex score label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityClassificationProcess -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityClassificationProcess">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phenice/ClassificationProcess"/>
+        <rdfs:label>Phenice&apos;s subpubic concavity morphological classification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityMorphology -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityMorphology">
+        <rdfs:label>Phenice&apos;s subpubic concavity assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityMorphologyLabel -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityMorphologyLabel">
+        <rdfs:label>Phenice&apos;s subpubic concavity assigned morphology label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityMorphologyNumericScore -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityMorphologyNumericScore">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phenice/MorphologyNumericScore"/>
+        <rdfs:label>Numeric value of Phenice&apos;s subpubic concavity assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityMorphologyScalarTransform -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityMorphologyScalarTransform">
+        <rdfs:label>Phenice&apos;s subpubic concavity assigned morphology scalar transformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/VentralArcClassificationProcess -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice/VentralArcClassificationProcess">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phenice/ClassificationProcess"/>
+        <rdfs:label>Phenice&apos;s ventral arc morphological classification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/VentralArcMorphology -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice/VentralArcMorphology">
+        <rdfs:label>Phenice&apos;s ventral arc assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/VentralArcMorphologyLabel -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice/VentralArcMorphologyLabel">
+        <rdfs:label>Phenice&apos;s ventral arc assigned morphology label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/VentralArcMorphologyNumericScore -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice/VentralArcMorphologyNumericScore">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phenice/MorphologyNumericScore"/>
+        <rdfs:label>Numeric value of Phenice&apos;s ventral arc assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/VentralArcMorphologyScalarTransform -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice/VentralArcMorphologyScalarTransform">
+        <rdfs:label>Phenice&apos;s ventral arc assigned morphology scalar transformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phaleron-si/9-Unobservable -->
+
+    <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phaleron-si/9-Unobservable">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeMorphologyLabel"/>
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityMorphologyLabel"/>
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phenice/VentralArcMorphologyLabel"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeScore1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeScore1">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeScore2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeScore2">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeScore3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeScore3">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/MorphologyScoreLabelSorting01 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phenice/MorphologyScoreLabelSorting01">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phenice/MorphologyScoreLabelSorting"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeScore1"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityScore1"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/ext/phenice/VentralArcScore1"/>
+        <rdfs:label>01: Score 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/MorphologyScoreLabelSorting02 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phenice/MorphologyScoreLabelSorting02">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phenice/MorphologyScoreLabelSorting"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeScore2"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityScore2"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/ext/phenice/VentralArcScore2"/>
+        <rdfs:label>02: Score 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/MorphologyScoreLabelSorting03 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phenice/MorphologyScoreLabelSorting03">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phenice/MorphologyScoreLabelSorting"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeScore3"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityScore3"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/ext/phenice/VentralArcScore3"/>
+        <rdfs:label>03: Score 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/MorphologyScoreLabelSorting04 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phenice/MorphologyScoreLabelSorting04">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phenice/MorphologyScoreLabelSorting"/>
+        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/ext/phaleron-si/9-Unobservable"/>
+        <rdfs:label>04: Unobservable</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityScore1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityScore1">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityScore2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityScore2">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityScore3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityScore3">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/VentralArcScore1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phenice/VentralArcScore1">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phenice/VentralArcMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/VentralArcScore2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phenice/VentralArcScore2">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phenice/VentralArcMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice/VentralArcScore3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phenice/VentralArcScore3">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phenice/VentralArcMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeClassificationProcess"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityClassificationProcess"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice/VentralArcClassificationProcess"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeMorphology"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityMorphology"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice/VentralArcMorphology"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeMorphologyLabel"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityMorphologyLabel"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice/VentralArcMorphologyLabel"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeMorphologyNumericScore"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityMorphologyNumericScore"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice/VentralArcMorphologyNumericScore"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice/IschiopubicRamusRidgeMorphologyScalarTransform"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice/SubpubicConcavityMorphologyScalarTransform"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice/VentralArcMorphologyScalarTransform"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
