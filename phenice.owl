@@ -195,6 +195,12 @@ Unobservable = no value</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphology">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/AssignedMorphology"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphologyValueSpecification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Phenice&apos;s ischiopubic ramus ridge assigned morphology</rdfs:label>
     </owl:Class>
     
@@ -248,7 +254,7 @@ Unobservable = no value</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/MorphologyValueSpecification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
                 <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphologyLabel"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -356,7 +362,7 @@ Unobservable = no value</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/MorphologyValueSpecification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
                 <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/AssignedMorphologyLabel"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -437,7 +443,7 @@ Unobservable = no value</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/MorphologyValueSpecification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
                 <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/VentralArcMorphologyLabel"/>
             </owl:Restriction>
         </rdfs:subClassOf>
