@@ -71,9 +71,73 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:label>has_specified_input</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:label>has_specified_output</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000999 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000999">
+        <rdfs:label>has category label</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0001938 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001938"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001938">
+        <rdfs:label>has value specification</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001937 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001937">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002135"/>
+        <rdfs:label>has specified numeric value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002135 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0002135">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -221,6 +285,12 @@ Unobservable = no value</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/MorphologyNumericScore"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphology"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
                 <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphologyNumericScoreValueSpecification"/>
             </owl:Restriction>
@@ -244,6 +314,84 @@ Unobservable = no value</obo:IAO_0000115>
     <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphologyNumericTransform">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/AssignedMorphologyNumericTransformation"/>
         <rdfs:label>Phenice&apos;s ischiopubic ramus ridge assigned morphology numeric transformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphologyType1NumericTransform -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphologyType1NumericTransform">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphologyNumericTransform"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphology"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
+                                        <owl:allValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphologyValueSpecification"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
+                                                        <owl:hasValue rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeScore1"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:allValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphologyNumericScore"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
+                                        <owl:allValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphologyNumericScoreValueSpecification"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
+                                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:allValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphologyType2NumericTransform -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphologyType2NumericTransform">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphologyNumericTransform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphologyType3NumericTransform -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphologyType3NumericTransform">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphologyNumericTransform"/>
     </owl:Class>
     
 
@@ -329,6 +477,12 @@ Unobservable = no value</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/MorphologyNumericScore"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/SubpubicConcavityMorphology"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
                 <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/MorphologyNumericScoreValueSpecification"/>
             </owl:Restriction>
@@ -410,6 +564,12 @@ Unobservable = no value</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/MorphologyNumericScore"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/VentralArcMorphology"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
                 <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/VentralArcMorphologyNumericScoreValueSpecification"/>
             </owl:Restriction>
@@ -469,7 +629,6 @@ Unobservable = no value</obo:IAO_0000115>
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphologyLabel"/>
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/SubpubicConcavityMorphologyLabel"/>
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/phenice-se/VentralArcMorphologyLabel"/>
-        <rdfs:label>Unobservable</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -501,11 +660,11 @@ Unobservable = no value</obo:IAO_0000115>
     
 
 
-    <!-- http://w3id.org/rdfbones/ext/phenice-se/MorphologyScoreLabelSorting04 -->
+    <!-- http://w3id.org/rdfbones/ext/phenice-se/MorphologyNumericValue1 -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phenice-se/MorphologyScoreLabelSorting04">
-        <obo:IAO_0000136 rdf:resource="http://w3id.org/rdfbones/ext/phaleron-si/9-Unobservable"/>
-        <rdfs:label>04: Unobservable</rdfs:label>
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/phenice-se/MorphologyNumericValue1">
+        <obo:OBI_0001937 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</obo:OBI_0001937>
+        <rdfs:label>Numeric value of 1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -618,6 +777,14 @@ Unobservable = no value</obo:IAO_0000115>
             <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphologyNumericTransform"/>
             <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice-se/SubpubicConcavityMorphologyNumericTransform"/>
             <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice-se/VentralArcMorphologyNumericTransform"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphologyType1NumericTransform"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphologyType2NumericTransform"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phenice-se/IschiopubicRamusRidgeMorphologyType3NumericTransform"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
