@@ -15,7 +15,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:resource="http://semanticscience.org/resource/">
     <owl:Ontology rdf:about="http://w3id.org/rdfbones/ext/phenice-se">
-        <obo:IAO_0000115>This RDFBones ontology extension implements the sex estimation routines as described in the publication &quot;A Newly Developed Visual Method of Sexing the 0s Pubis&quot; by T. W. Phenice (1969)</obo:IAO_0000115>
+        <obo:IAO_0000115>This RDFBones ontology extension implements the sex estimation routines as described in the publication &quot;A Newly Developed Visual Method of Sexing the Os Pubis&quot; by T. W. Phenice (1969) and further implements the addition of numeric scores for each morphology as described in the publication &quot;Standards for Data Collection from Human Skeletal Remains&quot; by J. E. Buikstra and D. H. Ubelaker (1994).</obo:IAO_0000115>
         <terms:creator>Lukas Bender</terms:creator>
         <terms:title>Phenice&apos;s sex estimation ontology</terms:title>
         <rdfs:label>Phenice&apos;s sex estimation ontology</rdfs:label>
